@@ -47,7 +47,7 @@ def conversations():
                             continue
                         else:
                             break
-            elif 'is not available' in str(c):
+            elif 'is not available' in str(r):
                 continue
             else:
                 time.sleep(3)
