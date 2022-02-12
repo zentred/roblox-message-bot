@@ -1,8 +1,8 @@
 import requests, ctypes, threading
 req = requests.Session()
 
-message = 'message you want to send here'
-cookie = 'cookie here'
+message = input( "what message do you want to send" )
+cookie = open( "cookie.txt" ).read()
 req.cookies['.ROBLOSECURITY'] = cookie
 
 proxies = open('proxies.txt','r').read().splitlines()
